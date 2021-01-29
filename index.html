@@ -11,6 +11,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        .profile-container {
+            
+        }
+
         .attribute-container {
             margin-top: 4px;
             margin-bottom: 8px;
@@ -20,7 +24,8 @@
             margin-top: -12px;
         }
 
-        .work-title, .attribute-tag {
+        .work-title,
+        .attribute-tag {
             font-weight: bold;
             color: #505050;
         }
@@ -38,7 +43,8 @@
             color: #186079;
         }
 
-        .company-period, .study-period {
+        .company-period,
+        .study-period {
             font-size: 10pt;
             color: #505050;
         }
@@ -47,73 +53,76 @@
 </head>
 
 <body>
-    <h2>Francisco Lopez</h2>
+    <div class="profile-container">
+        <h2>Francisco Lopez</h2>
 
-    <div class="attribute-container top-reduced">
-        <span class="work-title">Full Stack Developer</span>
-    </div>
+        <div class="attribute-container top-reduced">
+            <span class="work-title">Full Stack Developer</span>
+        </div>
 
-    <div id="personal-data" class="attribute-container">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAACgAgMAAAC6Z0ADAAAADFBMVEUZGRlmZmanp6ff39/7eL+uAAAH6klEQVRYw+2XQYvcyBXHS0vPGOKLJmQccA4+5+SPsD3Q40suYxh16PEhF7egtZD5CJPA5j6HUS+SD3HArUVPUH0xwVO1tL5CFrI+7MkLdrAlKEFwgqflkfIv9cyo1G7nHkgZTNs//d979erVqypW/9fB/o//l7HwKf08ntm7u/vzz+EffrG/0zvcTTfjy4f9vR3G2O58Iz6zrR57uNNj2+kGfDnoHTAb8sHgaAP+fo/ZzNrZY6y/m3yKD0EZ69l91jPk1/hioCljO7t2v/fgE/zatjTtMWYP7J10HZ/12c2wep/gPWuFtAt753gNXw6YOR6t4Y82ZsSuHfTW1e/tjvruGn7Vv4p7NR7Mu/jU6qgtr4v/1OvirbSD+6w7+scmrnr2Gv+tiS/Z+viliT+si/vbJn6/CnzH0aP5+YWJf2rU+2CjMGj4jon/1iicoUcY0aGemon/rifmOEEQAsd+nw2uJr7CpzqjMEwkckEx5JaJvwbeOoKSK8kzeswGzMQPdfm7HiW8kEKR37fYsYHh2hrCtJTFQuUUM9u63+LK1himM1VIpVTct/uGutKuPTheFGWlVBb3mWViS7vmWZ7Iuih5Qad23zB+CeN3iJQqU7mAOjtl9iMDw/iIeMJ5UdSVKgn4dy2+AMashCoXcK2keMZ6hvH3CNwFzaGWi0LyLv6ASBE4h/OykFLkzxgzjH/QtUm5kFIuSvwlZszMGkLbQkKRz1rpUcQ2u98JbYsyDh2v9AfibQdDbRFHUngF11LOY2adrBnPcpnIeVXDeR73mIGXrLdFkqtSzwqRqXNmrnfVZ9tEuXZeF/hIxmzPwAoYjpXilVoi58l5pxSXB1ALTE3BshQxkWXixV5vm5qRo9Ri3yH2cwPLU6h9lLkQOc0G+yPPumVgfsruxIeDgYO80wF2y7T/oMWF9NndMarVekTZbG/XJX/wmxZX+TP7rrPrHA6GxGPnKKNw716LlXrN7jqOO3KGCQWO3mh/NHAp3rJfT/XmcknMgqnG9031OfOgiUYOqdg5dMLk9OQGVyqPUWqTKMD/yyn254S+b3GNZbY9Cg6sRu33t+4kfzEal1CiT9FjtjWMEkn+6fa++im5wVghOhDx1wfbfkyKgrORI//6xPCdxGcU7z3+mR9x7E+KiF+0fa2Qy9kzQc4IwaMc45Dg4pvWuJD+LCEKmiXj2QTrtnx0jauqED/MMhHRhHRvQfOQXLa+c8Fnscqa9ebYntijy6UZuZrBKW+4UIs8lTK9wVUpkxmJTJDU9STyhUIeW/VCLbV6LgkGUMW5bi/zG4wCfRPlPBelVqMeFb6YG8bFu0hkWeNeYrOgXIs25/jXeZSjayUCkQuuxTw1jKvzKaZbCEFUYKNhBeUNVqVQHBXCCXPnMhG6PUhTndNUSVJ65onQ1gW/Ocd0t8Aikd4ChG2MKeRc1W3kuocLvQNIZzbT1kVtRp4RVoxUREc0TfCTF9e4KkvJhV4NQdHMGT70oE6S1jhC4zCOjM3OHN95xLNMFLWxYk1Q+pDBaTP+CrHz/AbrHix4s5xxMB4mIoG8jRzz1sfLSh5QniB+3vpWOjSRrHiItGQcxVYb652vKkWXsMBPfHp9cWG6B4tMXfFEZgmFxFMzcq6gCD145iptvkrbtKTIIUKLoYLnXO8DMi4mTWw5eS5WVW+UGBG0uKoUKgkZjac0wwEezTzDeJ0WBeoBAXv+uDn9Hx5RYqhhG3nK3Phsf9dxDvePPG7gFGnLdJnRbG9/NHIcBJAbalUmuoSjaOKPcMKH+D03r1RymWBHx9ihLmZPeoKGcVnCNelJBa4X+WFGXlct0McpDF0aO2PSlWFgnA58lTWaBMF0qJPauUrqctBZC6F23KSLy3KhGwYCmoShM9Y3FzKusTj3cpQhBWEYBfHq4lN3lkRgd2VxEE2ioau/7FyhsSTYvRQFFEa6dVEHFzAudSG5Qax7D9bueM04Ok8cuY1biUKdd0LTxUTP43FwVXCBiesSgSl66o1cN/J0dwrbxwGrUMhoaOKUxlPX07OeuaY6rUsElPwhDpzxNNL16n1r+lb6Dkb9H4MpzLvu0An/2bn86z0Qs3/M/JETRMOxw5+b89bNgZ5ZNMGC6GI88p6frGWNnlo/hqOmUJ0h//BlRw3jfSuc+L6jK9WVL+6Z80ZKnzLrZThpqONlL27X7Q5dZAiMsTfxdKwpjroX24YaN6wDnN1v3MjVrseUfWe1WSuVvkEx9i+3oc5REn/Hjo0Vyw/0pfhiFER6Xq48/3h9yW0609vmAn0xinDAO7jrxh8Zu90eVKcNvkRKR/5w+JWM9N3x+s6kLlYX+toJ3fHICdFaoWa3riZWP73C/jQIfH0SNuqVnNXi6jmQvnTdABtJym+1mm2v8OsrfPIGoTf19M3qoaEnx5bXL5aTf7uTWHc28eTj6mmDybGD67fGlxew3aj/fPVMwQOgfYrcr1xPqzkdX79i9tMObl4OCaU3j5ytFv+qDiJ0CC7iFhuPnXt1DJrgT33BPh2365d6CyYU6UvxBvwuas7/pHq9Ad+qlw2lJ/WrzVgnnHDwP92Av6irRkxp9Wojrhvj7+pyozqtV8dJvVGN6mxOs/lncNqEnmOdXm/G1aojFhvVJ9Uik5Rmdb0ZZ9iMqcS8N+Lfy3mZFziWNuNjni3KKuf86mG5hj2ZypovcNnaiI+lXMpSLecG/g9tG28+ySoqegAAAABJRU5ErkJggg==" alt="frank" /><br />
-        <span class="attribute-tag">Full name:</span>
-        <span class="attribute-value">Juan Francisco</span>
-        <span class="attribute-value uppercase">Lopez Martinez</span><br />
+        <div id="personal-data" class="attribute-container">
+            <img src="data:image/png;base64,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" alt="frank" /><br />
+            <span class="attribute-tag">Full name:</span>
+            <span class="attribute-value">Juan Francisco</span>
+            <span class="attribute-value uppercase">Lopez Martinez</span><br />
 
-        <span class="attribute-tag">Birthplace:</span>
-        <span class="attribute-value">Leon, Mexico</span><br />
+            <span class="attribute-tag">Birthplace:</span>
+            <span class="attribute-value">Leon, Mexico</span><br />
 
-        <span class="attribute-tag">Birthdate:</span>
-        <span class="attribute-value">November 6, 1987</span><br />
+            <span class="attribute-tag">Birthdate:</span>
+            <span class="attribute-value">November 6, 1987</span><br />
 
-        <span class="attribute-tag">Current location:</span>
-        <span class="attribute-value">Tokyo, Japan</span><br />
+            <span class="attribute-tag">Current location:</span>
+            <span class="attribute-value">Tokyo, Japan</span><br />
 
-        <span class="attribute-tag">Contact address:</span>
-        <span class="attribute-value value-segment">spic</span>
-        <span class="attribute-value value-segment">cane</span>
-        <span class="attribute-value value-segment">lforzo</span>
-        <span class="attribute-value value-segment">@gmail.com</span>
-    </div>
+            <span class="attribute-tag">Contact address:</span>
+            <span class="attribute-value value-segment">spic</span>
+            <span class="attribute-value value-segment">cane</span>
+            <span class="attribute-value value-segment">lforzo</span>
+            <span class="attribute-value value-segment">@gmail.com</span>
+        </div>
 
-    <div id="academic-data" class="attribute-container">
-        <span class="attribute-tag">Alma mater:</span>
-        <span class="attribute-value">Universidad de la Salle Bajio</span><br />
+        <div id="academic-data" class="attribute-container">
+            <span class="attribute-tag">Alma mater:</span>
+            <span class="attribute-value">Universidad de la Salle Bajio</span><br />
 
-        <span class="attribute-tag">Degree:</span>
-        <span class="attribute-value">Ingenieria en Tecnologias de Informacion</span><br />
+            <span class="attribute-tag">Degree:</span>
+            <span class="attribute-value">Ingenieria en Tecnologias de Informacion</span><br />
 
-        <span class="attribute-tag">Class:</span>
-        <span class="attribute-value">2012</span><br />
+            <span class="attribute-tag">Class:</span>
+            <span class="attribute-value">2012</span><br />
 
-        <span class="attribute-tag">Other studies:</span><br />
-        <span class="attribute-value">■ 立命館大学 (JICA Technical Training Program)</span><br />
-        <span class="attribute-value study-period">March 2014 ~ October 2014</span><br />
-        <span class="attribute-value">■ Instituto Cultural Mexicano-Japones</span><br />
-        <span class="attribute-value study-period">January 2014 ~ February 2014</span>
-    </div>
+            <span class="attribute-tag">Other studies:</span><br />
+            <span class="attribute-value">■ 立命館大学 (JICA Technical Training Program)</span><br />
+            <span class="attribute-value study-period">March 2014 ~ October 2014</span><br />
+            <span class="attribute-value">■ Instituto Cultural Mexicano-Japones</span><br />
+            <span class="attribute-value study-period">January 2014 ~ February 2014</span>
+        </div>
 
-    <div id="professional-data" class="attribute-container">
-        <span class="attribute-tag">Working experience:</span><br />
+        <div id="professional-data" class="attribute-container">
+            <span class="attribute-tag">Working experience:</span><br />
 
-        <span class="attribute-value company-name">■ balconia 株式会社</span>
-        <span class="attribute-value company-period">July 2019 ~ Present</span><br />
-        <span class="attribute-value programming-language">PHP</span>
-        <span class="attribute-value programming-language">JavaScript</span><br />
+            <span class="attribute-value company-name">■ balconia 株式会社</span>
+            <span class="attribute-value company-period">July 2019 ~ Present</span><br />
+            <span class="attribute-value programming-language">PHP</span>
+            <span class="attribute-value programming-language">JavaScript</span><br />
 
-        <span class="attribute-value company-name">■ Human Resocia 株式会社</span><br />
-        <span class="attribute-value company-period">July 2017 ~ June 2019</span><br />
-        <span class="attribute-value programming-language">C#</span>
-        <span class="attribute-value programming-language">JavaScript</span><br />
+            <span class="attribute-value company-name">■ Human Resocia 株式会社</span><br />
+            <span class="attribute-value company-period">July 2017 ~ June 2019</span><br />
+            <span class="attribute-value programming-language">C#</span>
+            <span class="attribute-value programming-language">JavaScript</span><br />
 
-        <span class="attribute-value company-name">■ MES Automation</span><br />
-        <span class="attribute-value company-period">November 2014 ~ August 2016</span><br />
-        <span class="attribute-value company-period">March 2012 ~ December 2013</span><br />
-        <span class="attribute-value programming-language">C#</span>
-        <span class="attribute-value programming-language">JavaScript</span><br />
+            <span class="attribute-value company-name">■ MES Automation</span><br />
+            <span class="attribute-value company-period">November 2014 ~ August 2016</span><br />
+            <span class="attribute-value company-period">March 2012 ~ December 2013</span><br />
+            <span class="attribute-value programming-language">C#</span>
+            <span class="attribute-value programming-language">JavaScript</span><br />
 
-        <span class="attribute-value company-name">■ C-Technologies</span><br />
-        <span class="attribute-value company-period">January 2011 ~ August 2011</span><br />
-        <span class="attribute-value programming-language">Objective-C</span>
+            <span class="attribute-value company-name">■ C-Technologies</span><br />
+            <span class="attribute-value company-period">January 2011 ~ August 2011</span><br />
+            <span class="attribute-value programming-language">Objective-C</span>
+
+        </div>
 
     </div>
 
