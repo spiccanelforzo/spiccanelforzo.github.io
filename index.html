@@ -11,6 +11,27 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        .col-1 {width: 10%;}
+        .col-2 {width: 30%;}
+
+        [class*="col-"] {
+            float: left;
+            padding: 12px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #505050;
+            font-size: 10pt;
+        }
+
         .profile-container {}
 
         .attribute-container {
@@ -57,7 +78,13 @@
 </head>
 
 <body>
-    <div class="profile-container">
+    <div class="side-menu col-1">
+        <div class="menu-element">
+            <a class="uppercase" href="#">blog</a>
+        </div>
+    </div>
+
+    <div class="profile-container col-2">
         <h2>Francisco Lopez</h2>
 
         <div class="attribute-container top-reduced">
